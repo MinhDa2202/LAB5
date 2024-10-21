@@ -44,7 +44,7 @@ function StudentApp() {
           <h2>Total Selected Students: {selectedCount}</h2>
         </Col>
         <Col>
-          <Button variant="primary" onClick={clearStudents} className="float-end">
+          <Button variant="primary" onClick={clearStudents}>
             Clear All
           </Button>
         </Col>
@@ -53,7 +53,6 @@ function StudentApp() {
       <Row className="align-items-center mb-4">
         <Col>
           <Form.Group controlId="formStudentName">
-            <Form.Label>Student Name</Form.Label>
             <Form.Control
               type="text"
               placeholder="Enter student name"
@@ -64,14 +63,13 @@ function StudentApp() {
           </Form.Group>
         </Col>
         <Col>
-          <Button variant="success" onClick={addStudent} className="float-end">
+          <Button variant="success" onClick={addStudent}>
             Add
           </Button>
         </Col>
       </Row>
 
       <Form.Group controlId="formStudentCode" className="mb-4">
-        <Form.Label>Student Code</Form.Label>
         <Form.Control
           type="text"
           placeholder="Enter student code"
